@@ -416,26 +416,27 @@ header{
     }
 
 
-    .project-section {
-        background-color: var(--clr-light-gray);
-        padding-top: 3rem;
-    }
-    
-    .project-section .project-header {
+/* ///////////////////// project section //////////////// */
+.project-section{
+    background-color: var(--clr-light-gray);
+    padding-top: 3rem;
+}
+
+    .project-section .project-header{
         text-align: center;
     }
-    
-    .project-section .project-container {
+
+    .project-section .project-container{
         display: flex;
         flex-direction: column;
-        gap: 6rem;
+        gap: 12rem;
         padding-top: 4.8rem;
         padding-bottom: 4.8rem;
     }
-    
-    .project-container .project-card {
-        width: 100%;
-        height: auto;
+
+    .project-container .project-card{
+        width: 90%;
+        height: 55rem;
         background-color: #afafaf;
         background-image: url('../images/projects/StudyNotion_Image_BG.png');
         background-repeat: no-repeat;
@@ -444,20 +445,20 @@ header{
         box-shadow: 0 0 4rem #1f1f1f;
         position: relative;
     }
-    
-    .project-container #project-2 {
+
+    .project-container #project-2{
         background-image: url('../images/projects/DevDetective_BG.png');
     }
-    
-    .project-container #project-3 {
+
+    .project-container #project-3{
         background-image: url('../images/projects/RazorPay_HomePage.png');
     }
-    
-    .project-card:nth-child(even) {
+
+    .project-card:nth-child(even){
         align-self: flex-end;
     }
-    
-    .project-card::before {
+
+    .project-card::before{
         content: "";
         background: #1f1f1f9a;
         position: absolute;
@@ -467,8 +468,8 @@ header{
         right: 0;
         z-index: 1;
     }
-    
-    .project-card::after {
+
+    .project-card::after{
         content: "";
         background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
         position: absolute;
@@ -480,13 +481,14 @@ header{
         transform-origin: left;
         transition: all 0.4s;
         z-index: 2;
-    }
-    
-    .project-card:hover::after {
+    } 
+
+    .project-card:hover::after{
         transform: scaleX(1);
     }
-    
-    .project-card .project-content {
+
+
+    .project-card .project-content{
         color: var(--clr-white);
         display: flex;
         flex-direction: column;
@@ -499,60 +501,60 @@ header{
         transition: all 0.4s;
         max-width: 55%;
     }
-    
-    .project-card:hover > .project-content {
+
+    .project-card:hover > .project-content{
         scale: 1.1;
     }
-    
-    .project-card:nth-child(odd) .project-content {
+
+    .project-card:nth-child(odd) .project-content{
         left: 10%;
     }
-    
-    .project-card:nth-child(even) .project-content {
+
+    .project-card:nth-child(even) .project-content{
         right: 10%;
     }
-    
+
     .project-content .project-skills-container {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         max-width: 60%;
     }
-    
-    .project-content .project-skills-container img {
+
+    .project-content .project-skills-container img{
         width: 4rem;
     }
-    
-    .project-content h2 {
+
+    .project-content h2{
         font-size: 5rem;
         font-weight: 700;
         text-transform: capitalize;
     }
-    
-    .project-content p {
+
+    .project-content p{
         font-size: 1.6rem;
         font-style: italic;
         max-width: 70%;
     }
-    
-    .project-content .project-buttons {
-        display: flex;
+
+    .project-content .project-buttons{
+        display:flex;
         gap: 1.6rem;
         align-items: center;
         margin-top: 1rem;
     }
-    
-    .project-buttons .icons {
+
+    .project-buttons .icons{
         font-size: 4rem;
         color: var(--clr-white);
         transition: all 0.4s;
     }
-    
-    .project-buttons .icons:hover {
+
+    .project-buttons .icons:hover{
         color: var(--clr-orange);
     }
-    
-    .project-card .project-number {
+
+    .project-card .project-number{
         font-size: 20rem;
         font-weight: 600;
         color: var(--clr-white);
@@ -563,75 +565,15 @@ header{
         opacity: 0;
         transition: opacity 0.2s;
     }
-    
-    .project-card:hover .project-number {
+
+    .project-card:hover .project-number{
         opacity: 1;
     }
-    
-    .project-card:nth-child(even) .project-number {
+
+    .project-card:nth-child(even) .project-number{
         left: -4rem;
         top: -4.5rem;
     }
-    
-    @media (max-width: 768px) {
-        .project-container {
-            gap: 4rem;
-        }
-    
-        .project-card {
-            height: auto;
-        }
-    
-        .project-content {
-            max-width: 80%;
-        }
-    
-        .project-card:nth-child(even), 
-        .project-card:nth-child(odd) {
-            align-self: center;
-        }
-    
-        .project-content .project-skills-container {
-            max-width: 100%;
-        }
-    
-        .project-card .project-number {
-            font-size: 15rem;
-            right: -2rem;
-            left: auto;
-            top: -3rem;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .project-content {
-            padding: 2rem;
-            max-width: 90%;
-        }
-    
-        .project-card {
-            height: auto;
-        }
-    
-        .project-content h2 {
-            font-size: 3.5rem;
-        }
-    
-        .project-content p {
-            font-size: 1.4rem;
-        }
-    
-        .project-buttons .icons {
-            font-size: 3rem;
-        }
-    
-        .project-card .project-number {
-            font-size: 12rem;
-            right: -1rem;
-            top: -2rem;
-        }
-    }
-    
 
 /* //////////////// skills ///////////////// */
 .skill-section{
