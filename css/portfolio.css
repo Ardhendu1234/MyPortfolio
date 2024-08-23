@@ -444,7 +444,7 @@ header{
     background-position: center;
     box-shadow: 0 0 4rem #1f1f1f;
     position: relative;
-    margin: 0 auto; /* Center the cards */
+    overflow: hidden; /* Ensure content stays within the card */
 }
 
 .project-container #project-2 {
@@ -453,6 +453,10 @@ header{
 
 .project-container #project-3 {
     background-image: url('../images/projects/RazorPay_HomePage.png');
+}
+
+.project-card:nth-child(even) {
+    align-self: flex-end;
 }
 
 .project-card::before {
@@ -496,12 +500,11 @@ header{
     z-index: 5;
     transition: all 0.4s;
     max-width: 55%;
-    /* Ensure skill icons are at the start of the heading */
-    align-items: flex-start; 
+    overflow: hidden; /* Prevent content from overflowing */
 }
 
 .project-card:hover > .project-content {
-    scale: 1.1;
+    scale: 1.05; /* Reduced scale to prevent overflow */
 }
 
 .project-card:nth-child(odd) .project-content {
@@ -516,12 +519,11 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: flex-start; /* Align skills to the start */
-    max-width: 100%; /* Ensure skills stay within bounds */
+    max-width: 60%;
 }
 
 .project-content .project-skills-container img {
-    width: 4rem;
+    width: 3.5rem; /* Adjusted size to prevent overflow */
 }
 
 .project-content h2 {
@@ -558,8 +560,8 @@ header{
     font-weight: 600;
     color: var(--clr-white);
     position: absolute;
-    right: -4rem;
     top: -4.5rem;
+    right: -2rem; /* Adjusted for alignment */
     z-index: 10;
     opacity: 0;
     transition: opacity 0.2s;
@@ -570,46 +572,33 @@ header{
 }
 
 .project-card:nth-child(even) .project-number {
-    left: -4rem;
+    left: -2rem; /* Adjusted for alignment */
     top: -4.5rem;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .project-container .project-card {
-        width: 100%; /* Full width on mobile */
-        margin: 0; /* Remove auto margins */
+    .project-content .project-skills-container {
+        max-width: 100%; /* Expand container width */
+        justify-content: center;
+    }
+    
+    .project-content .project-skills-container img {
+        width: 3rem; /* Scale down icons on smaller screens */
     }
 
     .project-content {
-        max-width: 90%; /* Ensure content stays within bounds */
+        max-width: 80%; /* Allow more space for content on small screens */
     }
 
-    .project-number {
-        font-size: 15rem; /* Adjust size for mobile */
-        right: 1rem;
+    .project-card {
+        height: auto; /* Allow height to adjust based on content */
     }
 
-    .project-card:nth-child(even) .project-number {
-        left: 1rem;
-    }
-
-    .project-content .project-skills-container {
-        justify-content: flex-start; /* Align skills to the start */
+    .project-card .project-number {
+        font-size: 12rem; /* Reduce size of project numbers on small screens */
     }
 }
-
-.project-1-Allign {
-    align-items: center;
-}
-
-.project-2-Allign {
-    align-items: center;
-}
-
-.project-3-Allign {
-    align-items: center;
-}
-
 
 /* //////////////// skills ///////////////// */
 .skill-section{
@@ -701,7 +690,7 @@ header{
             left: 46%;
         }
     }
-
+ 
 
 /* ////////////////////// Contact section  */
 
