@@ -758,7 +758,7 @@ footer{
         font-size: 8rem;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 0px;
         color: #535c87;
         user-select: none;
     }
