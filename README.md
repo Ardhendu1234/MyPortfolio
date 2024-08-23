@@ -1,4 +1,3 @@
 # Ardhendu Shekhar's Portfolio
 
-Welcome to my portfolio! This repository showcases my work as a software engineer, including various projects developed with modern technologies. You can explore my projects and technical skills by visiting the live portfolio website: [Ardhendu Shekhar's Portfolio](https://ardhendu-portfolio.vercel.app/).
-
+Welcome to my portfolio! I am Ardhendu Shekhar, a passionate full-stack web developer from Manipal Institute of Technology. This repository showcases my diverse projects, developed with a strong focus on the MERN stack and other modern technologies. Explore my work to see examples of my problem-solving skills, design sensibilities, and technical expertise. Feel free to check out my projects and connect with me through the links provided. Visit my [portfolio website](https://ardhendu-portfolio.vercel.app/) for more details.
