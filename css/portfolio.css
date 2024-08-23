@@ -596,17 +596,6 @@ header{
     }
 }
 
-.project-1-Allign {
-    align-items: center;
-}
-
-.project-2-Allign {
-    align-items: center;
-}
-
-.project-3-Allign {
-    align-items: center;
-}
 
 /* //////////////// skills ///////////////// */
 .skill-section{
@@ -698,7 +687,7 @@ header{
             left: 46%;
         }
     }
-
+ 
 
 /* ////////////////////// Contact section  */
 
