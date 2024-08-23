@@ -520,6 +520,7 @@ header{
     flex-wrap: wrap;
     gap: 1rem;
     max-width: 60%;
+    transition: opacity 0.3s ease;
 }
 
 .project-content .project-skills-container img {
@@ -598,7 +599,12 @@ header{
     .project-card .project-number {
         font-size: 12rem; /* Reduce size of project numbers on small screens */
     }
+
+    .project-card:hover .project-content .project-skills-container {
+        opacity: 0.6; /* Make skills logos slightly disappear on hover */
+    }
 }
+
 
 /* //////////////// skills ///////////////// */
 .skill-section{
