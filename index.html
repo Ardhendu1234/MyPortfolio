@@ -191,128 +191,83 @@
 
     <!-- ////////////////// skills section //////// -->
     <section class="skill-section" id="skills">
-      <div class="skill-section-content container">
-        <div class="skill-fadded-text">skills</div>
-        <div class="skill-section-left">
-          <h2 class="skill-section-heading">
-            <span>M</span>e and <br />My Tech Stack
-          </h2>
-
-          <p>
-            I am an enthusiastic software engineer in training, currently pursuing a Bachelor of Technology at the Manipal Institute of Technology. I specialize in full-stack web development, with a strong command over the MERN stack, enabling me to create sophisticated and responsive web applications.
-          </p>
-
-          <p>
-            During my internships at Peryton Technologies LLP and Code Clause, I successfully built and launched various projects, including a comprehensive eCommerce platform and engaging web applications. My hands-on experience has provided me with a deep understanding of both front-end and back-end technologies.
-          </p>
-         
-          <p>
-            I am committed to continuous learning and innovation, always seeking opportunities to enhance my technical expertise. My proactive approach to solving complex problems and building user-friendly applications positions me as a promising developer ready to contribute meaningfully to the tech industry.
-          </p>          
-        </div>
-
-        <div class="skill-section-right">
-          <img
-            src="images/userAsset/blob vector.png"
-            class="blob-style"
-            alt=""
-          />
+      <h2>Skills</h2>
+      <div class="skill-container">
+        <div class="skill-logo">
           <img src="images/stack/HTML.png" alt="" />
+        </div>
+        <div class="skill-logo">
           <img src="images/stack/CSS.png" alt="" />
+        </div>
+        <div class="skill-logo">
           <img src="images/stack/Javascript.svg" alt="" />
+        </div>
+        <div class="skill-logo">
           <img src="images/stack/React.png" alt="" />
-          <img src="images/stack/Tailwind.png" alt="" />
+        </div>
+        <div class="skill-logo">
           <img src="images/stack/NodeJs.svg" alt="" />
-          <img src="images/stack/Express.png" alt="" />
+        </div>
+        <div class="skill-logo">
           <img src="images/stack/MongoDB.svg" alt="" />
+        </div>
+        <div class="skill-logo">
+          <img src="images/stack/Tailwind.png" alt="" />
+        </div>
+        <div class="skill-logo">
           <img src="images/stack/Redux.svg" alt="" />
-          <img src="images/stack/Vercel.svg" alt="" />
-          <img src="images/stack/Git.svg" alt="" />
-          <img src="images/stack/Github.svg" alt="" />
+        </div>
+        <div class="skill-logo">
+          <img src="images/stack/Express.png" alt="" />
         </div>
       </div>
     </section>
 
-    <!-- //////////////// contact section ////////// -->
+    <!-- /////////// contact section /////////// -->
     <section class="contact-section" id="contact">
-      <div class="contact-section-content container">
-        <h2 class="contact-section-heading">Contact Me</h2>
-        <h3 class="contact-section-sub-heading">
-          Questions, thoughts, or just want to say hello?
-        </h3>
+      <h2>Contact Me</h2>
 
-        <form action="https://formsubmit.co/ronyrx468@gmail.com" method="POST" class="contact-form">
-          <div class="form-field">
-            <input type="text" placeholder="Enter your name" required />
-          </div>
-        
-          <div class="form-field">
-            <input type="email" placeholder="Enter your email address" required />
-          </div>
-        
-          <div class="form-field">
-            <input type="text" placeholder="Enter your subject" required />
-          </div>
-        
-          <div class="form-field">
-            <textarea
-              name=""
-              id="my-textarea"
-              cols="30"
-              rows="10"
-              placeholder="Enter your message"
-              required
-            ></textarea>
-          </div>
-        
-          <div class="button-field">
-            <button type="submit" class="btn form-btn">
-              Send Message
-              <i class="fa-solid fa-paper-plane icon"></i>
-            </button>
-          </div>
-        </form>
-      </div>
+      <form
+        action="https://formsubmit.co/your-email@example.com"
+        method="POST"
+        class="contact-form"
+      >
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
 
-    <!-- //////////// footer ///////////// -->
+    <!-- footer -->
     <footer>
-      <div class="footer-content container">
-        <div class="footer-fadded-text">Ardhendu</div>
-
-        <nav class="nav-div">
-          <ul>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#contact">contact me</a></li>
-          </ul>
-        </nav>
-
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/ardhendu-shekhar-b27a071a2/" target="_blank">
-            <i class="fa-brands fa-linkedin icon"></i>
-          </a>
-
-          <a href="https://github.com/ARDHENDU1234" target="_blank">
-            <i class="fa-brands fa-github icon"></i>
-          </a>
-
-          <a href="https://x.com/IKakerot54369" target="_blank">
-            <i class="fa-brands fa-twitter icon"></i>
-          </a>
-
-          <a 
-          href="mailto:ronyrx468@gmail.com?subject=I Liked your Portfolio&body=Hi, Ardhendu%0AI hope you are doing good.%0AMy name is ..."
-           target="_blank">
-            <i class="fa-regular fa-envelope icon"></i>
-          </a>
-        </div>
-      </div>
+      <p>© 2024 Ardhendu Shekhar. All rights reserved.</p>
     </footer>
-    <!-- ///// -->
 
-    <!-- /////// scripts /// -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="js/script.js"></script>
+    <script src="js/portfolio.js"></script>
   </body>
 </html>
