@@ -444,7 +444,7 @@ header{
     background-position: center;
     box-shadow: 0 0 4rem #1f1f1f;
     position: relative;
-    overflow: hidden; /* Ensure content stays within the card */
+    margin: 0 auto; /* Center the cards */
 }
 
 .project-container #project-2 {
@@ -453,10 +453,6 @@ header{
 
 .project-container #project-3 {
     background-image: url('../images/projects/RazorPay_HomePage.png');
-}
-
-.project-card:nth-child(even) {
-    align-self: flex-end;
 }
 
 .project-card::before {
@@ -500,11 +496,10 @@ header{
     z-index: 5;
     transition: all 0.4s;
     max-width: 55%;
-    overflow: hidden; /* Prevent content from overflowing */
 }
 
 .project-card:hover > .project-content {
-    scale: 1.05; /* Reduced scale to prevent overflow */
+    scale: 1.1;
 }
 
 .project-card:nth-child(odd) .project-content {
@@ -519,12 +514,12 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    max-width: 60%;
-    transition: opacity 0.3s ease;
+    justify-content: center; /* Center alignment */
+    max-width: 100%; /* Ensure skills stay within bounds */
 }
 
 .project-content .project-skills-container img {
-    width: 3.5rem; /* Adjusted size to prevent overflow */
+    width: 4rem;
 }
 
 .project-content h2 {
@@ -561,8 +556,8 @@ header{
     font-weight: 600;
     color: var(--clr-white);
     position: absolute;
+    right: -4rem;
     top: -4.5rem;
-    right: -2rem; /* Adjusted for alignment */
     z-index: 10;
     opacity: 0;
     transition: opacity 0.2s;
@@ -573,35 +568,31 @@ header{
 }
 
 .project-card:nth-child(even) .project-number {
-    left: -2rem; /* Adjusted for alignment */
+    left: -4rem;
     top: -4.5rem;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .project-content .project-skills-container {
-        max-width: 100%; /* Expand container width */
-        justify-content: center;
-    }
-    
-    .project-content .project-skills-container img {
-        width: 3rem; /* Scale down icons on smaller screens */
+    .project-container .project-card {
+        width: 100%; /* Full width on mobile */
+        margin: 0; /* Remove auto margins */
     }
 
     .project-content {
-        max-width: 80%; /* Allow more space for content on small screens */
+        max-width: 90%; /* Ensure content stays within bounds */
     }
 
-    .project-card {
-        height: auto; /* Allow height to adjust based on content */
+    .project-number {
+        font-size: 15rem; /* Adjust size for mobile */
+        right: 1rem;
     }
 
-    .project-card .project-number {
-        font-size: 12rem; /* Reduce size of project numbers on small screens */
+    .project-card:nth-child(even) .project-number {
+        left: 1rem;
     }
 
-    .project-card:hover .project-content .project-skills-container {
-        opacity: 0.6; /* Make skills logos slightly disappear on hover */
+    .project-content .project-skills-container {
+        justify-content: flex-start; /* Align skills to the start */
     }
 }
 
