@@ -415,6 +415,7 @@ header{
         display: none;
     }
 
+
 /* ///////////////////// project section //////////////// */
 .project-section {
     background-color: var(--clr-light-gray);
@@ -423,32 +424,27 @@ header{
 
 .project-section .project-header {
     text-align: center;
-    font-size: 3rem; /* Adjust header size for better visibility */
 }
 
 .project-section .project-container {
     display: flex;
     flex-direction: column;
-    gap: 4rem; /* Reduced gap for better spacing */
+    gap: 12rem;
     padding-top: 4.8rem;
     padding-bottom: 4.8rem;
 }
 
 .project-container .project-card {
-    width: 100%; /* Full width on mobile */
+    width: 90%;
     height: 55rem;
     background-color: #afafaf;
+    background-image: url('../images/projects/StudyNotion_Image_BG.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     box-shadow: 0 0 4rem #1f1f1f;
     position: relative;
     margin: 0 auto; /* Center the cards */
-    overflow: hidden; /* Prevent content overflow */
-}
-
-.project-container #project-1 {
-    background-image: url('../images/projects/StudyNotion_Image_BG.png');
 }
 
 .project-container #project-2 {
@@ -496,12 +492,11 @@ header{
     padding: 3.2rem;
     position: absolute;
     top: 50%;
-    left: 0;
-    right: 0;
     transform: translateY(-50%);
     z-index: 5;
     transition: all 0.4s;
-    max-width: 100%; /* Full width to accommodate content */
+    max-width: 55%;
+    /* Ensure skill icons are at the start of the heading */
     align-items: flex-start; 
 }
 
@@ -509,24 +504,28 @@ header{
     scale: 1.1;
 }
 
-.project-card .project-content .project-skills-container {
+.project-card:nth-child(odd) .project-content {
+    left: 10%;
+}
+
+.project-card:nth-child(even) .project-content {
+    right: 10%;
+}
+
+.project-content .project-skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Align skills to the start */
+    max-width: 100%; /* Ensure skills stay within bounds */
 }
 
-.project-card .project-content .project-skills-container img {
+.project-content .project-skills-container img {
     width: 4rem;
-    transition: transform 0.3s ease-in-out;
-}
-
-.project-card:hover .project-content .project-skills-container img {
-    transform: translateY(-10px); /* Move icons up on hover */
 }
 
 .project-content h2 {
-    font-size: 4rem; /* Adjust heading size for better responsiveness */
+    font-size: 5rem;
     font-weight: 700;
     text-transform: capitalize;
 }
@@ -534,7 +533,7 @@ header{
 .project-content p {
     font-size: 1.6rem;
     font-style: italic;
-    max-width: 100%; /* Full width for better readability */
+    max-width: 70%;
 }
 
 .project-content .project-buttons {
@@ -576,22 +575,13 @@ header{
 }
 
 @media (max-width: 768px) {
-    .project-section .project-header {
-        font-size: 2.5rem; /* Adjust header size for mobile */
-    }
-
     .project-container .project-card {
-        height: auto; /* Allow height to adjust based on content */
+        width: 100%; /* Full width on mobile */
         margin: 0; /* Remove auto margins */
     }
 
     .project-content {
         max-width: 90%; /* Ensure content stays within bounds */
-        padding: 2rem; /* Reduce padding for mobile */
-    }
-
-    .project-content .project-skills-container img {
-        width: 3rem; /* Adjust icon size for mobile */
     }
 
     .project-number {
@@ -608,9 +598,18 @@ header{
     }
 }
 
-.project-1-Allign, .project-2-Allign, .project-3-Allign {
+.project-1-Allign {
     align-items: center;
 }
+
+.project-2-Allign {
+    align-items: center;
+}
+
+.project-3-Allign {
+    align-items: center;
+}
+
 
 /* //////////////// skills ///////////////// */
 .skill-section{
