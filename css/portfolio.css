@@ -444,6 +444,7 @@ header{
     background-position: center;
     box-shadow: 0 0 4rem #1f1f1f;
     position: relative;
+    overflow: hidden; /* Ensure content stays within the card */
 }
 
 .project-container #project-2 {
@@ -499,10 +500,11 @@ header{
     z-index: 5;
     transition: all 0.4s;
     max-width: 55%;
+    overflow: hidden; /* Prevent content from overflowing */
 }
 
 .project-card:hover > .project-content {
-    scale: 1.1;
+    scale: 1.05; /* Reduced scale to prevent overflow */
 }
 
 .project-card:nth-child(odd) .project-content {
@@ -521,7 +523,7 @@ header{
 }
 
 .project-content .project-skills-container img {
-    width: 4rem;
+    width: 3.5rem; /* Adjusted size to prevent overflow */
 }
 
 .project-content h2 {
@@ -597,7 +599,6 @@ header{
         font-size: 12rem; /* Reduce size of project numbers on small screens */
     }
 }
-
 
 /* //////////////// skills ///////////////// */
 .skill-section{
