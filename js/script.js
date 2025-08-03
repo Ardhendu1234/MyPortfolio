@@ -28,8 +28,7 @@ var typeData = new Typed(".role", {
     strings: [
       "MERN Stack Developer",
       "Frontend Developer",
-      "Backend Developer",
-      "Software Developer",
+      "Business Analyst",
     ],
     loop: true,
     typeSpeed: 100,
