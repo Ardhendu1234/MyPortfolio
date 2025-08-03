@@ -17,6 +17,25 @@
     />
     <link rel="stylesheet" href="css/portfolio.css" />
   </head>
+  <style>
+    .desc-wrapper {
+      width: 100%;
+      float: left;
+      padding: 0rem;
+      box-sizing: border-box;
+    }
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 2rem;
+      word-break: break-word;
+      text-align: justify;
+    }
+  </style>  
   <body>
     <!-- mobile nav -->
     <div class="overlay"></div>
@@ -56,9 +75,17 @@
       <div class="hero-section-left">
         <h1 class="name">Hi! I'm Ardhendu</h1>
         <p class="profession">I am a <span class="role"></span></p>
-        <p class="desc">
-          <b>As a Business Analyst Intern at Walking Tree, Mumbai, I conducted in-depth data analysis to uncover trends, optimize inventory, and support strategic decision-making through clear executive reporting. Previously, as a Front-End Developer Intern at Peryton, I built scalable React interfaces with integrated APIs, enabling responsive, data-driven user experiences.</b>
-        </p>
+        <div class="desc-wrapper">
+          <p class="desc">
+            <b>
+              I’m a B.Tech graduate from Manipal Institute of Technology with a strong foundation in full-stack development and business analytics. 
+              I’ve delivered data-driven insights across sales, customer behavior, and inventory using advanced Excel and segmentation techniques. 
+              As a Front-End Developer Intern, I built scalable React applications and integrated APIs for responsive user experiences. 
+              I'm driven by a passion for clean code, insightful analysis, and thoughtful design.
+            </b>
+          </p>
+        </div>
+
         <!-- Ensure the resume file is in the 'assets' folder relative to this HTML file -->
         <a class="btn" href="assets/Ardhendu-Shekhar-Resume.pdf" target="_blank" download>Download Resume</a>
       </div>
